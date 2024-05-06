@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz-App</title>
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./index.js" defer></script>
+    <script src="./form.js" defer></script>
+    <script src="./form.html" defer></script>
   </head>
   <body>
     <header class="header">
@@ -22,19 +25,29 @@
               In the Kingdom Heart series who provides the english voice for
               Master Eraqus?
             </h2>
-            <button class="card__button-answer" type="button">
+            <button
+              class="card__button-answer"
+              data-js="card__button-answer"
+              type="button"
+            >
               Show answer
             </button>
-            <p class="card__answer">Mark Hamill</p>
+            <p class="card__answer" data-js="card__answer">Mark Hamill</p>
             <ul class="card__tag-list">
               <li class="card__tag-list-item">#kingdomheart</li>
               <li class="card__tag-list-item">#mastereraqus</li>
               <li class="card__tag-list-item">#english voices</li>
             </ul>
             <div class="card__button-bookmark">
-              <button class="bookmark" aria-label="bookmark" type="button">
+              <button
+                class="bookmark"
+                data-js="bookmark-button"
+                aria-label="bookmark"
+                type="button"
+              >
                 <svg
                   class="bookmark__icon"
+                  data-js="bookmark-icon"
                   xmlns="http://www.w3.org/2000/svg"
                   viewbox="0 0 24 24"
                 >
@@ -175,6 +188,29 @@
             </svg>
           </a>
         </li>
+
+        <!-- new list element for form -->
+
+        <li class="navigation__list-item">
+          <a
+            class="navigation__link"
+            href="/form.html"
+            aria-label="go to question-form page"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="24px"
+            >
+              <title>plus-circle-outline</title>
+              <path
+                d="M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M13,7H11V11H7V13H11V17H13V13H17V11H13V7Z"
+              />
+            </svg>
+          </a>
+        </li>
+
+        <!-- end of new list element for form -->
       </ul>
     </nav>
   </body>

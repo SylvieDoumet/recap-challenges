@@ -1,0 +1,63 @@
+.header {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 0;
+  background-color: var(--secondary);
+  color: var(--white);
+  border-bottom: 1px solid var(--black);
+}
+
+.header__title {
+  text-align: center;
+}
+
+.form {
+  padding: 0 2rem;
+}
+
+.textarea {
+  border: 1px solid var(--black);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  width: 400px;
+  height: 200px;
+}
+
+.form__button-submit {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 10px 1rem;
+  margin-top: 10px;
+  margin-bottom: 10 px;
+}
+
+TO ADD .new_card {
+  border: 1px solid var(--black);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.new_card_hastag_tagList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 20px;
+  /* padding: 10rem 2rem 4rem 2rem;
+  max-width: 45rem;
+  margin: 0 auto; */
+}
+
+.new_card_hastag_tagListItem {
+  background-color: var(--secondary);
+  color: var(--white);
+  border-radius: 4px;
+  padding: 0 5px;
+  /* margin: 0 0 4rem; */
+}
