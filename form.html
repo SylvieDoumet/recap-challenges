@@ -8,9 +8,8 @@
     />
     <title>Quiz App - Submit form</title>
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./index.js" defer></script>
+    <!-- <script src="./index.js" defer></script> -->
     <script src="./form.js" defer></script>
-    <script src="./form/form.css" defer></script>
   </head>
   <body>
     <main>
@@ -20,70 +19,69 @@
       <br />
 
       <form class="form" data-js="form">
-        <ul class="card-list" data-js="card-list">
-          <!-- No 1 submit fields with textarea components like in exercise  -->
+        <!-- No 1 submit fields with textarea components like in exercise  -->
 
-          <label for="question">Your question:</label>
-          <br />
-          <textarea
-            class="textarea"
-            id="textbox"
-            data-js="question-textfield"
-            id="question1"
-            name="question1"
-            rows="4"
-            cols="50"
-            maxlength="79"
-          >
-          </textarea>
-          <br />
-          <span data-js="question-charcount"></span>
-          <br />
-          <br />
+        <label for="question">Your question:</label>
+        <br />
+        <textarea
+          class="textarea"
+          id="textbox"
+          data-js="question-textfield"
+          id="question1"
+          name="question1"
+          rows="4"
+          cols="50"
+          maxlength="79"
+        >
+        </textarea>
+        <br />
+        <span data-js="question-charcount"></span>
+        <br />
+        <br />
 
-          <label for="answer">Your answer:</label>
-          <br />
+        <label for="answer">Your answer:</label>
+        <br />
 
-          <textarea
-            class="textarea"
-            id="textbox"
-            data-js="answer-textfield"
-            id="answer1"
-            name="answer1"
-            rows="7"
-            cols="50"
-            maxlength="150"
-          >
-          </textarea>
-          <br />
-          <span data-js="answer-charcount"></span>
+        <textarea
+          class="textarea"
+          id="textbox"
+          data-js="answer-textfield"
+          id="answer1"
+          name="answer1"
+          rows="7"
+          cols="50"
+          maxlength="150"
+        >
+        </textarea>
+        <br />
+        <span data-js="answer-charcount"></span>
 
-          <br />
-          <br />
-          <label for="tag">Tag:</label>
-          <br />
-          <input type="text" name="hashtag1" id="hashtag1" />
+        <br />
+        <br />
+        <label for="tag">Tag:</label>
+        <br />
+        <input type="text" name="hashtag1" id="hashtag1" />
 
-          <br />
-          <br />
+        <br />
+        <br />
 
-          <button
-            class="form__button-submit"
-            data-js="form__button-submit"
-            type="submit"
-          >
-            Submit
-          </button>
+        <button
+          class="form__button-submit"
+          data-js="form__button-submit"
+          type="submit"
+        >
+          Submit
+        </button>
 
-          <!-- No 2    Submit fields with form - fieldset like in demo  -->
+        <!-- No 2    Submit fields with form - fieldset like in demo  -->
 
-          <!-- <form>    -->
-          <!-- <legend>Quiz App</legend> 
+        <!-- <form>    -->
+        <!-- <legend>Quiz App</legend> 
         <fieldset> 
             <legend>Your question</legend> -->
-          <!-- <label for="your-question">Your question:</label> -->
+        <!-- <label for="your-question">Your question:</label> -->
 
-          <!-- <input
+        <!-- <input
              type="text"
              name="question"
              id="question"
@@ -91,12 +89,12 @@
              value="Are you a robot?"
            /> -->
 
-          <!-- <fieldset>
+        <!-- <fieldset>
              <legend>Your card__answer:</legend> -->
 
-          <!-- <label for="your-answer">Your answer:</label> -->
+        <!-- <label for="your-answer">Your answer:</label> -->
 
-          <!-- <input
+        <!-- <input
                type="text"
                name="answer"
                id="answer"
@@ -104,7 +102,7 @@
                value="Yes I am."
              /> -->
 
-          <!-- <fieldset>
+        <!-- <fieldset>
                  <legend>Tag:</legend>
                  <label for="tag">Tag:</label>
                  <input
@@ -115,26 +113,13 @@
                  />
                 </form>
          <button type="submit">Submit</button> -->
-        </ul>
       </form>
 
       <br />
 
       <!-- answer card  -->
-<article class=" new_card">
-      <ul class="card-list">
-        <li class="card-list__item">
-          <article class="card">
-            <h2 class="card__question">""</h2>
-            <p class="card__answer" data-js="card__answer">""</p>
-            < class="card__tag-list">
-              <li class="new_card_hastag_tagListItem">""</li>
-              <li class="new_card_hastag_tagListItem">""</li>
-              <li class="new_card_hastag_tagListItem">""</li>
-          </li>
-        </ul>
-    </article>
 
+      <ul class="card-list" data-js="cardlist"></ul>
     </main>
 
     <nav class="navigation">

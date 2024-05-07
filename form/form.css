@@ -36,7 +36,9 @@
   margin-bottom: 10 px;
 }
 
-TO ADD .new_card {
+/* TO ADD  */
+
+.new_card {
   border: 1px solid var(--black);
   padding: 2rem;
   text-align: center;

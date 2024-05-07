@@ -27,7 +27,7 @@ answerField.addEventListener("input", (event) => {
 
 const form = document.querySelector('[data-js="form"]');
 
-const cardList = document.querySelector('[data-js="card-list"]');
+const cardList = document.querySelector('[data-js="cardlist"]');
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -36,10 +36,13 @@ form.addEventListener("submit", (event) => {
   //   console.log("form submitted", event.target.elements.answer1.value);
   //   console.log("form submitted", event.target.elements.hashtag1.value);
 
-  const questionCard = document.createElement("div");
+  const listItem = document.createElement("li");
+  listItem.classList.add("card-list__item");
+
+  const questionCard = document.createElement("article");
   questionCard.classList.add("card");
 
-  const questionText = document.createElement("p");
+  const questionText = document.createElement("h2");
   questionText.classList.add("card__question");
   questionText.textContent = event.target.elements.question1.value;
   questionCard.append(questionText);
@@ -47,6 +50,7 @@ form.addEventListener("submit", (event) => {
   const answerText = document.createElement("p");
   answerText.classList.add("card__answer");
   answerText.textContent = event.target.elements.answer1.value;
+  console.log(event.target.elements.answer1.value);
   questionCard.append(answerText);
 
   const hashtagText = document.createElement("p");
@@ -56,7 +60,8 @@ form.addEventListener("submit", (event) => {
 
   //   questionCard.append(form);
 
-  cardList.append(questionCard);
+  listItem.append(questionCard);
+  cardList.append(listItem);
 
   //   if (event.target.elements.question1.value === "") {
   //   }
